@@ -1,4 +1,5 @@
 import "./css/style.css";
+import "./css/game.css";
 
 import "./js/app";
 

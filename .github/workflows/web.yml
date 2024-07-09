@@ -1,4 +1,4 @@
-name: имя проекта
+name: homework_2
 
 on:
   push:
