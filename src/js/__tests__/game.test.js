@@ -1,9 +1,13 @@
-describe("Пример теста", () => {
-  test.each([
-    { str: "Hello!", expected: "Hello!" },
-    { str: "", expected: "" },
-    { str: 100, expected: 100 },
-  ])("demo($str)", ({ str, expected }) => {
-    expect(str).toBe(expected);
+/**
+ * @jest-environment jsdom
+ */
+import Game from "../classes/game";
+
+describe("Тест класса Game", () => {
+  test("Тест создания экземпляра класса", () => {
+    const field = document.querySelector("body");
+    const game = new Game(field);
+    expect(game.parentElement).toBe(field);
+    expect(game.position).toBe(16);
   });
 });
