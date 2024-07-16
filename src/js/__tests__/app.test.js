@@ -10,5 +10,5 @@ test("Проверка вызова класса Game и его методов �
   expect(Game).not.toHaveBeenCalled();
   document.dispatchEvent(event);
   expect(Game).toHaveBeenCalledTimes(1);
-  expect(Game.mock.instances[0].start).toHaveBeenCalledTimes(1);
+  expect(Game.mock.instances[0].waitingStart).toHaveBeenCalledTimes(1);
 });

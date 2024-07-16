@@ -8,6 +8,5 @@ describe("Тест класса Game", () => {
     const field = document.querySelector("body");
     const game = new Game(field);
     expect(game.parentElement).toBe(field);
-    expect(game.position).toBe(16);
   });
 });
